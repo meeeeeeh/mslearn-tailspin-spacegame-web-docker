@@ -18,6 +18,8 @@ stages:
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
       dotnetSdkVersion: '6.x'
+      webRepository: 'web'
+      tag: '$(Build.BuildId)'
 
     steps:
     - task: UseDotNet@2
